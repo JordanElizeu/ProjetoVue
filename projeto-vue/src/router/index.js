@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Time from '../views/Time.vue'
+import Venda from '../views/Venda.vue'
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/time',
-    name: 'Time',
-    component: Time
+    path: '/venda',
+    name: 'Venda',
+    component: Venda
   },
   
 ]
