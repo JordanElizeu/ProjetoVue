@@ -7,7 +7,7 @@
     >
       <v-app-bar-nav-icon @click="drawer=true"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Campeonato Brasileiro</v-toolbar-title>
+      <v-toolbar-title class="text-center">{{title}}</v-toolbar-title>
     </v-app-bar>
     
     <v-navigation-drawer
@@ -23,19 +23,27 @@
           active-class="green--text text--lighten-2"
         >
         <router-link to="/">
-          <v-list-item>
+          <v-list-item @click="title='Home'">
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Início</v-list-item-title>
+            <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
         </router-link>
-        <router-link to="/time">
-          <v-list-item>
+        <router-link to="/vendas">
+          <v-list-item @click="title='Tabela de Vendas'">
             <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
+              <v-icon>mdi-shopping</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Classificação</v-list-item-title>
+            <v-list-item-title>Vendas</v-list-item-title>
+          </v-list-item>
+        </router-link>
+        <router-link to="/produtos">
+          <v-list-item @click="title='Tabela de Produtos'">
+            <v-list-item-icon>
+              <v-icon>mdi-cart</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Produtos</v-list-item-title>
           </v-list-item>
         </router-link>
         </v-list-item-group>
@@ -49,10 +57,11 @@ export default {
     name:'AppTopBar',
     data(){
         return{
+            title:'Home',
             drawer: false,
             group: null,
         }
-    }
+    },
 }
 </script>
 

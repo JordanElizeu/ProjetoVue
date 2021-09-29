@@ -1,15 +1,14 @@
 <template>
-    <div class="classificacao">
-        <h1>Olá Mundo !!!</h1>
+    <div class="home">
     </div>
 </template>
 
 <script>
 export default {
-    name:'Classificacao',
+    name:'Home',
     data(){
         return{
-
+            
         }
     }
 }

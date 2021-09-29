@@ -12,7 +12,7 @@ import AppTopBar from './components/AppTopBar.vue'
 export default {
   name: 'App',
   components:{
-    AppTopBar    
+    AppTopBar,
   }
 };
 </script>
