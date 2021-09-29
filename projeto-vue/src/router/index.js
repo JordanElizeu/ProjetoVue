@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Venda from '../views/Venda.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,7 +10,6 @@ const routes = [
     name: 'Venda',
     component: Venda
   },
-  
 ]
 
 const router = new VueRouter({

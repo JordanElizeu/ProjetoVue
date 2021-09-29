@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <AppTopBar/>
     <v-main>
       <router-view/>
  
@@ -10,6 +11,7 @@
 
 <script>
 import AppFooter from './components/AppFooter.vue'
+import AppTopBar from './components/AppTopBar.vue'
 export default {
   name: 'App',
   
@@ -17,7 +19,8 @@ export default {
     
   }),
   components: {
+    AppTopBar,
     AppFooter
   }
-};
+}
 </script>
