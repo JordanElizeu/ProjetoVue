@@ -12,22 +12,28 @@
         class="red lighten-1 text-center"
       >
         <v-card-text>
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4"
-            icon
-          >
-            <v-icon size="24px">
-              {{ icon }}
+            <router-link to="/"> 
+                <v-icon size="24px" class="icons">
+                 mdi-home
             </v-icon>
-          </v-btn>
+            </router-link>
+            <router-link to="/produtos">
+                <v-icon size="24px" class="icons">    
+                mdi-email
+                </v-icon> 
+            </router-link>
+            <router-link to="/produtos">
+                <v-icon size="24px" class="icons">
+                mdi-calendar
+                </v-icon>
+            </router-link>  
         </v-card-text>
 
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+            <p>{{ new Date().getFullYear() }} — Todos os direitos reservados!</p>
+           <strong>Devs - Andrew - Jordan</strong>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -40,12 +46,6 @@
 export default {
     name: 'AppFooter',
      data: () => ({
-       icons: [
-        'mdi-home',
-        'mdi-email',
-        'mdi-calendar',
-        'mdi-delete',
-      ],
       items: [
         'default',
         'absolute',
@@ -71,4 +71,10 @@ export default {
 </script>
 
 <style>
+.icons{
+    padding: 0px 10px;
+}
+a{
+    text-decoration: none;
+}
 </style>
