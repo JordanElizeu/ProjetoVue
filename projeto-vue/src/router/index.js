@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Time from '../views/Time.vue'
+import Classificacao from '../views/Classificacao.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,7 +11,11 @@ const routes = [
     name: 'Time',
     component: Time
   },
-  
+  {
+    path: '/',
+    name: 'Classificacao',
+    component: Classificacao
+  },
 ]
 
 const router = new VueRouter({
