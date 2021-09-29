@@ -1,17 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Time from '../views/Time.vue'
 import ViewProdutos from '../views/ViewProdutos.vue'
 import Home from '../views/Home.vue'
+import Venda from '../views/Venda.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/vendas',
-    name: 'Time',
-    component: Time
-  },
   {
     path: '/produtos',
     name: 'ViewProdutos',
@@ -21,6 +16,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/vendas',
+    name: 'Vendas',
+    component: Venda
   },
 ]
 
